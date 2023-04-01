@@ -1,7 +1,7 @@
 {
-  "name": "Pyrogram String Session Generator",
-  "description": "Telegram bot to generate pyrogram string session",
-  "logo": "https://telegra.ph/file/7ec22c82f580a334dd13e.jpg",
+  "name": "MS STRING",
+  "description": "Telegram bot untuk mengambil string pyrogram/telethon",
+  "logo": "https://telegra.ph/file/c31bb15bf8cb3dac4bd68.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -25,32 +25,32 @@
          "plan": "heroku-postgresql"
       }
    ],
-  "repository": "https://github.com/StarkBotsIndustries/StringSessionBot",
+  "repository": "https://github.com/MS-DZULQURNAIN/MS-STRING",
   "env": {
     "ENVIRONMENT": {
-      "description": "Don't change ANYTHING.",
+      "description": "GAUSAH DIUBAH",
       "required": true,
       "value": "ANYTHING"
     },
     "API_ID": {
-      "description": "Get this value from my.telegram.org.",
+      "description": "API_ID dari my.telegram.org.",
       "required": true,
-      "value": ""
+      "value": "26915599"
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
+      "description": "API_HASH dari my.telegram.org.",
       "required": true,
-      "value": ""
+      "value": "76438a4fa64f9e43b3921a204a79e000"
     },
     "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
+      "description": "BOT_TOKEN dari @BotFather",
       "required": true,
-      "value": ""
+      "value": "5724927227:AAEahyND0Ek7ojgjHXXjP2l3RsrdU7Mm5Q8"
     },
     "MUST_JOIN": {
-      "description": "Add username/id of a channel/group",
+      "description": "Username/id FSUB (jadikan bot sebagai admin)",
       "required": false,
-      "value": ""
+      "value": "MSPR0JECT"
     }
   }
 }
