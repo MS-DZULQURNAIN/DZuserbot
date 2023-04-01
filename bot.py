@@ -13,20 +13,20 @@ app = Client(
     api_hash=env.API_HASH,
     bot_token=env.BOT_TOKEN,
     in_memory=True,
-    plugins={'root':'StringSessionBot'},
+    plugins={'root':'MsSTRING'},
 )
 
 
 if __name__ == "__main__":
-    logging.info("Starting the bot")
+    logging.info("BOT TELAH AKTIF🔥🔥🔥")
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
+        raise Exception("API_ID/API_HASH tidak cocok.")
     except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
+        raise Exception("BOT_TOKEN tidak cocok.")
     uname = app.me.username
-    logging.info(f"@{uname} is now running!")
+    logging.info(f"@{uname} AKTIF🔥🔥🔥")
     idle()
     app.stop()
-    logging.info("Bot stopped. Alvida!")
+    logging.info("Bot Berhenti🗿 PC @MSDZULQURNAIN")
