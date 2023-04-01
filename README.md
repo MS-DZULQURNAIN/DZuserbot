@@ -57,12 +57,12 @@
 ## Credits
 
 - Github
-- [Pyrogram](https://docs.pyrogram.org) Library
-- [Telethon](https://docs.telethon.dev) Library 
+- [Pyrogram Library](https://docs.pyrogram.org)
+- [Telethon Library](https://docs.telethon.dev)
 - MS DZULQURNAIN
 
 ## Support
 
-Youtube : [MS DZULQURNAIN](https://youtube.com/@msdzulqurnain5914)
-Channel Tele : [MS PROJECT](https://t.me/MSPR0JECT)
-DONASI : [QRIS](https://telegra.ph/file/bdf23d4e78c8337249c26.png)
+-Youtube : [MS DZULQURNAIN](https://youtube.com/@msdzulqurnain5914)
+-Channel Tele : [MS PROJECT](https://t.me/MSPR0JECT)
+-DONASI : [QRIS](https://telegra.ph/file/bdf23d4e78c8337249c26.png)
