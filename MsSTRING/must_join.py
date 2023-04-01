@@ -6,7 +6,7 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 
 @Client.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not MUST_JOIN:  # Not compulsory
+    if not MUST_JOIN:  
         return
     try:
         try:
@@ -19,14 +19,15 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"You must join [this channel]({link}) to use me. After joining try again !",
+                    f"Kamu harus join channel dibawah ini sebelum menggunakan saya. Setelah join coba lagi klik /start",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("✨ Join Channel ✨", url=link)]
+                        [InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/stories_zulll")],
+                        [InlineKeyboardButton("JOIN CHANNEL", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat : {MUST_JOIN} !")
+        print(f"Kamu bukan admin!")
