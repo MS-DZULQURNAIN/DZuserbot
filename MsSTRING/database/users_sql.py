@@ -3,7 +3,7 @@ from env import DATABASE_URL
 from sqlalchemy import Column, BigInteger
 
 if DATABASE_URL !="":
-    from StringSessionBot.database import BASE, SESSION
+    from MsSTRING.database import BASE, SESSION
 else:
     BASE = object
 
