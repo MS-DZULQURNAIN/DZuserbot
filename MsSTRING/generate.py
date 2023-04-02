@@ -25,7 +25,7 @@ from telethon.errors import (
 from data import Data
 
 
-ask_ques = "**SILAKAN PILIH STRING YANG MAU LU AMBIL"
+ask_ques = "**SILAKAN PILIH STRING YANG MAU LU AMBIL**"
 buttons_ques = [
     [
         InlineKeyboardButton("PYROGRAM V2", callback_data="pyrogram"),
@@ -122,7 +122,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
             return
         except (SessionPasswordNeeded, SessionPasswordNeededError):
             try:
-                two_step_msg = await bot.ask(user_id, 'Akunmu terpasang two-step verification. Tolong kirimkan password nya.', filters=filters.text, timeout=300)
+                two_step_msg = await bot.ask(user_id, 'Akunmu terpasang two-step verification. Tolong kirimkan password nya...', filters=filters.text, timeout=300)
             except TimeoutError:
                 await msg.reply('Waktu habis dalam 5 menit. Tolong mulai mengambil ulang klik /start', reply_markup=InlineKeyboardMarkup(Data.generate_button))
                 return
