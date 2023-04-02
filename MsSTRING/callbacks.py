@@ -2,7 +2,7 @@ import traceback
 from data import Data
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
-from StringSessionBot.generate import generate_session, ask_ques, buttons_ques
+from MsSTRING.generate import generate_session, ask_ques, buttons_ques
 
 
 # Callbacks
@@ -48,7 +48,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     elif query.startswith("pyrogram") or query.startswith("telethon"):
         try:
             if query == "pyrogram":
-                #await callback_query.answer("Please note that the new type of string sessions may not work in all bots, i.e, only the bots that have been updated to pyrogram v2 will work!", show_alert=True)
+                #await callback_query.answer("Harap dicatat bahwa string versi baru mungkin tidak berfungsi di semua bot, hanya bot yang telah diperbarui ke pyrogram v2 yang akan berfungsi!", show_alert=True)
                 await generate_session(bot, callback_query.message)
                 """
             # Maybe in future it'll come back.
@@ -57,7 +57,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 await generate_session(bot, callback_query.message, old_pyro=True)
                 """
             elif query == "pyrogram_bot":
-                await callback_query.answer("Please note that this bot session will be of pyrogram v2", show_alert=True)
+                await callback_query.answer("Harap dicatat bahwa string bot ini akan menjadi pyrogram v2", show_alert=True)
                 await generate_session(bot, callback_query.message, is_bot=True)
             elif query == "telethon_bot":
                 await callback_query.answer()
@@ -71,7 +71,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             await callback_query.message.reply(ERROR_MESSAGE.format(str(e)))
 
 
-ERROR_MESSAGE = "Oops! An exception occurred! \n\n**Error** : {} " \
-            "\n\nPlease visit @StarkBotsChat if this message doesn't contain any " \
-            "sensitive information and you if want to report this as " \
-            "this error message is not being logged by us!"
+ERROR_MESSAGE = "Ups!  Pengecualian terjadi!  \n\n**Kesalahan** : {} " \
+            "\n\nSilakan PC @MSDZULQURNAIN jika pesan ini tidak berisi apa pun " \
+            "informasi sensitif dan Anda jika ingin melaporkan ini sebagai " \
+            "pesan kesalahan ini tidak dicatat oleh kami!"
