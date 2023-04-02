@@ -5,8 +5,8 @@ from env import DATABASE_URL
 
 
 if DATABASE_URL != '':
-    from StringSessionBot.database import SESSION
-    from StringSessionBot.database.users_sql import Users, num_users
+    from MsSTRING.database import SESSION
+    from MsSTRING.database.users_sql import Users, num_users
 
 
 @Client.on_message(~filters.service, group=1)
