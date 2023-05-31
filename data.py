@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    generate_single_button = [InlineKeyboardButton("🔥 MULAI MENGAMBIL STRING 🔥", callback_data="generate")]
+    generate_single_button = [InlineKeyboardButton("🔥 BUAT 𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🔥", callback_data="telethon")]
 
     home_buttons = [
         generate_single_button,
@@ -13,22 +13,12 @@ class Data:
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("BANTUAN", callback_data="help"),
-            InlineKeyboardButton("TENTANG SAYA", callback_data="about")
-        ],
-        [InlineKeyboardButton("BOT LAIN NYA🔎", url="https://t.me/MSPR0JECT")],
+        [InlineKeyboardButton("OWNER", url="https://t.me/MSDZULQRNN"),
+         InlineKeyboardButton("BOT LAIN NYA🔎", url="https://t.me/MSPR0JECT")],
     ]
 
     START = """
-**Halo {}
-━━━━━━━━━━━━━━━━━━━━━━━━
-{} di buat untuk Membantu anda Untuk Mengambil String Session Telegram dengan Mudah dan AMAN!
-━━━━━━━━━━━━━━━━━━━━━━━━
-Jika anda Tidak Mempercayai Bot ini:
-1. Jangan dibaca Pesan ini
-2. Hapus Pesan dan Blokir Bot ini
-━━━━━━━━━━━━━━━━━━━━━━━━
-Managed With ☕️ By @MSDZULQURNAIN**
+**BUAT BOT MU SEKARANG💃**
     """
 
     HELP = """
