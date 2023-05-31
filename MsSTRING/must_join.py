@@ -19,11 +19,25 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"Kamu harus join channel dibawah ini sebelum menggunakan saya. Setelah join coba lagi klik /start",
+                    """
+**Halo 
+━━━━━━━━━━━━━━━━━━━━━━━━
+𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ᴘʀᴇᴍɪᴜᴍ💎
+├ ʀᴘ. 30.000  [ ᴘᴇʀʙᴜʟᴀɴ ]
+├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+└ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+━━━━━━━━━━━━━━━━━━━━━━━━
+𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ʙɪᴀsᴀ🤖
+├ ʀᴘ. 20.000  [ ᴘᴇʀʙᴜʟᴀɴ ]
+├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+└ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+━━━━━━━━━━━━━━━━━━━━━━━━
+Hubungi admin dibawah untuk melakukan transaksi & acc**""",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/stories_zulll")],
-                        [InlineKeyboardButton("JOIN CHANNEL", url=link)]
+                        [InlineKeyboardButton("ADMIN", url="https://t.me/MSDZULQRNN")]
                     ])
                 )
                 await msg.stop_propagation()
