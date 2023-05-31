@@ -1,12 +1,9 @@
 {
-  "name": "MS STRING",
-  "description": "Telegram bot untuk mengambil string pyrogram/telethon",
-  "logo": "https://telegra.ph/file/c31bb15bf8cb3dac4bd68.jpg",
+  "name": "DZuserbot",
+  "description": "DZuserbot project by @MSDZULQRNN",
+  "logo": "",
   "keywords": [
-    "telegram",
-    "bot",
-    "python",
-    "pyrogram"
+    "DZuserbot"
   ],
     "buildpacks": [{
     "url": "heroku/python"
@@ -25,7 +22,7 @@
          "plan": "heroku-postgresql"
       }
    ],
-  "repository": "https://github.com/MS-DZULQURNAIN/MS-STRING",
+  "repository": "https://github.com/MS-DZULQURNAIN/DZuserbot",
   "env": {
     "ENVIRONMENT": {
       "description": "GAUSAH DIUBAH",
@@ -35,22 +32,22 @@
     "API_ID": {
       "description": "API_ID dari my.telegram.org.",
       "required": true,
-      "value": "26915599"
+      "value": ""
     },
     "API_HASH": {
       "description": "API_HASH dari my.telegram.org.",
       "required": true,
-      "value": "76438a4fa64f9e43b3921a204a79e000"
+      "value": ""
     },
     "BOT_TOKEN": {
       "description": "BOT_TOKEN dari @BotFather",
       "required": true,
-      "value": "5724927227:AAEahyND0Ek7ojgjHXXjP2l3RsrdU7Mm5Q8"
+      "value": ""
     },
     "MUST_JOIN": {
       "description": "Username/id FSUB (jadikan bot sebagai admin)",
       "required": false,
-      "value": "MSPR0JECT"
+      "value": ""
     }
   }
 }
