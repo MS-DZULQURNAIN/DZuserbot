@@ -50,7 +50,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
         ty = "Pyrogram v2"
     if is_bot:
         ty += " Bot"
-    await msg.reply(f"Mulai mengambil string {ty}...")
+    await msg.reply("Mulai mengambil string ...")
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, 'Tolong kirimkan `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
